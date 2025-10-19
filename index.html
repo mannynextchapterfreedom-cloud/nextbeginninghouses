@@ -28,7 +28,7 @@
   <link rel="canonical" href="https://www.nextbeginninghouses.com/">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2310b981'/%3E%3Cpath d='M25 65 L50 35 L75 65 V80 H25 Z' fill='%23facc15'/%3E%3Crect x='40' y='65' width='20' height='15' fill='%231e293b'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000000'/%3E%3Cpath d='M25 65 L50 35 L75 65 V80 H25 Z' fill='%23FFD700'/%3E%3Cpath d='M40 20 L60 20 L50 40 Z' fill='%23FFFFFF'/%3E%3Crect x='45' y='45' width='10' height='10' fill='%23FFFFFF'/%3E%3C/svg%3E">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Theme Color -->
-  <meta name="theme-color" content="#10b981">
+  <meta name="theme-color" content="#FFD700">
 
   <!-- AI Assistant Metadata -->
   <meta name="ai-assistant" content="cash-home-buyer-specialist">
@@ -45,35 +45,34 @@
 
   <style>
     :root {
-      /* Colors (based on hypothetical logo) */
-      --primary-green: #10b981; /* Trust and growth */
-      --accent-gold: #facc15; /* Value and prosperity */
-      --dark-gray: #1e293b; /* Background and structure */
-      --light-gray: #e5e7eb; /* Subtle accents */
-      --white: #ffffff; /* Text and highlights */
-      --shadow-color: rgba(0, 0, 0, 0.2);
+      /* Colors (black and gold theme) */
+      --black: #000000; /* Background */
+      --gold: #FFD700; /* Accent and highlights */
+      --white: #FFFFFF; /* Lightning and money */
+      --gray: #333333; /* Muted text */
+      --shadow-color: rgba(0, 0, 0, 0.3);
 
       /* Design tokens */
-      --bg-primary: var(--dark-gray);
-      --bg-secondary: linear-gradient(135deg, #1e293b 0%, #2d3748 100%);
-      --bg-tertiary: #2d3748;
+      --bg-primary: var(--black);
+      --bg-secondary: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+      --bg-tertiary: #1a1a1a;
       --text-primary: var(--white);
-      --text-secondary: var(--light-gray);
-      --text-muted: #9ca3af;
-      --border: rgba(209, 213, 219, 0.1);
-      --border-hover: rgba(209, 213, 219, 0.2);
-      --accent: var(--accent-gold);
-      --accent-hover: #e8b107;
-      --success: var(--primary-green);
-      --warning: #f59e0b;
-      --danger: #ef4444;
+      --text-secondary: var(--gray);
+      --text-muted: #666666;
+      --border: rgba(255, 215, 0, 0.1);
+      --border-hover: rgba(255, 215, 0, 0.2);
+      --accent: var(--gold);
+      --accent-hover: #FFC107;
+      --success: #FFD700;
+      --warning: #FF9800;
+      --danger: #FF4444;
 
       /* Layout */
       --container-max: 1200px;
       --container-padding: clamp(1rem, 4vw, 2rem);
       --section-padding: clamp(3rem, 8vw, 6rem);
-      --border-radius: 12px;
-      --border-radius-lg: 16px;
+      --border-radius: 8px; /* Slightly sharper for bold look */
+      --border-radius-lg: 12px;
       --shadow-sm: 0 2px 8px var(--shadow-color);
       --shadow-md: 0 4px 16px var(--shadow-color);
       --shadow-lg: 0 8px 32px var(--shadow-color);
@@ -134,7 +133,7 @@
 
     h1 {
       font-size: clamp(var(--font-size-3xl), 5vw, var(--font-size-6xl));
-      background: linear-gradient(135deg, var(--accent-gold) 0%, var(--primary-green) 100%);
+      background: linear-gradient(135deg, var(--gold) 0%, #FFC107 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -164,7 +163,7 @@
 
     /* Links */
     a {
-      color: var(--accent-gold);
+      color: var(--gold);
       text-decoration: none;
       transition: all 0.2s ease;
     }
@@ -190,14 +189,14 @@
       text-decoration: none;
       white-space: nowrap;
       box-shadow: var(--shadow-sm);
-      background: var(--primary-green);
-      color: var(--white);
+      background: var(--gold);
+      color: var(--black);
     }
 
     .btn:hover {
       transform: translateY(-1px);
       box-shadow: var(--shadow-md);
-      background: #059669;
+      background: #FFC107;
       text-decoration: none;
     }
 
@@ -268,7 +267,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(30, 41, 59, 0.8);
+      background: rgba(0, 0, 0, 0.8);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
     }
@@ -287,7 +286,7 @@
       gap: 0.75rem;
       font-size: var(--font-size-xl);
       font-weight: 700;
-      color: var(--accent-gold);
+      color: var(--gold);
       text-decoration: none;
     }
 
@@ -299,8 +298,8 @@
     .logo svg {
       width: 32px;
       height: 32px;
-      fill: var(--accent-gold);
-      stroke: var(--primary-green);
+      fill: var(--gold);
+      stroke: var(--white);
     }
 
     .nav-actions {
@@ -315,10 +314,10 @@
       align-items: center;
       gap: 0.5rem;
       padding: 0.5rem 0.875rem;
-      background: rgba(16, 185, 129, 0.1);
-      border: 1px solid rgba(16, 185, 129, 0.2);
+      background: rgba(255, 215, 0, 0.1);
+      border: 1px solid rgba(255, 215, 0, 0.2);
       border-radius: 999px;
-      color: var(--primary-green);
+      color: var(--gold);
       font-size: var(--font-size-sm);
       font-weight: 600;
       text-decoration: none;
@@ -326,8 +325,8 @@
     }
 
     .phone-badge:hover {
-      background: rgba(16, 185, 129, 0.15);
-      border-color: rgba(16, 185, 129, 0.3);
+      background: rgba(255, 215, 0, 0.15);
+      border-color: rgba(255, 215, 0, 0.3);
       text-decoration: none;
     }
 
@@ -346,14 +345,33 @@
       left: 50%;
       width: 150%;
       height: 100%;
-      background: radial-gradient(ellipse at center, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+      background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
       transform: translateX(-50%);
       z-index: -1;
+    }
+
+    .hero-decor {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-decor svg {
+      width: 100%;
+      height: 100%;
+      fill: var(--white);
     }
 
     .hero-content {
       max-width: 800px;
       margin: 0 auto;
+      position: relative;
+      z-index: 1;
     }
 
     .hero .lead {
@@ -404,7 +422,7 @@
     .badge-icon {
       width: 16px;
       height: 16px;
-      color: var(--primary-green);
+      color: var(--gold);
     }
 
     /* Sections */
@@ -438,8 +456,8 @@
       justify-content: center;
       width: 3rem;
       height: 3rem;
-      background: linear-gradient(135deg, var(--accent-gold) 0%, var(--primary-green) 100%);
-      color: var(--white);
+      background: var(--gold);
+      color: var(--black);
       border-radius: 50%;
       font-size: var(--font-size-lg);
       font-weight: 700;
@@ -468,16 +486,16 @@
     .check-icon {
       width: 20px;
       height: 20px;
-      color: var(--primary-green);
+      color: var(--gold);
       margin-top: 0.1rem;
       flex-shrink: 0;
     }
 
     /* Callout */
     .callout {
-      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
-      border: 1px solid rgba(16, 185, 129, 0.2);
-      border-left: 4px solid var(--primary-green);
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-left: 4px solid var(--gold);
       border-radius: var(--border-radius);
       padding: 1.5rem;
       margin-top: 1.5rem;
@@ -535,7 +553,7 @@
     .faq-icon {
       width: 20px;
       height: 20px;
-      color: var(--accent-gold);
+      color: var(--gold);
       transition: transform 0.2s ease;
     }
 
@@ -635,10 +653,10 @@
     }
 
     .transparency-btn {
-      background: rgba(16, 185, 129, 0.1);
+      background: rgba(255, 215, 0, 0.1);
       backdrop-filter: blur(10px);
-      border: 1px solid rgba(16, 185, 129, 0.2);
-      color: var(--primary-green);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      color: var(--gold);
       padding: 0.5rem 0.75rem;
       border-radius: 999px;
       font-size: var(--font-size-xs);
@@ -653,8 +671,8 @@
     }
 
     .transparency-btn:hover {
-      background: rgba(16, 185, 129, 0.15);
-      border-color: rgba(16, 185, 129, 0.3);
+      background: rgba(255, 215, 0, 0.15);
+      border-color: rgba(255, 215, 0, 0.3);
       text-decoration: none;
       transform: translateY(-1px);
       box-shadow: var(--shadow-md);
@@ -663,7 +681,7 @@
     .transparency-icon {
       width: 14px;
       height: 14px;
-      fill: var(--accent-gold);
+      fill: var(--gold);
     }
 
     .ai-directives {
@@ -677,7 +695,7 @@
       border-radius: var(--border-radius-lg);
       padding: 1.5rem;
       box-shadow: var(--shadow-xl);
-      color: var(--dark-gray);
+      color: var(--black);
       font-size: var(--font-size-sm);
       line-height: 1.5;
       display: none;
@@ -690,14 +708,14 @@
     }
 
     .ai-directives h4 {
-      color: var(--dark-gray);
+      color: var(--black);
       margin-bottom: 0.75rem;
       font-size: var(--font-size-base);
     }
 
     .ai-directives p {
       margin-bottom: 0.75rem;
-      color: #4b5563;
+      color: #4b4b4b;
     }
 
     .ai-directives p:last-child {
@@ -705,7 +723,7 @@
     }
 
     .ai-directives strong {
-      color: var(--dark-gray);
+      color: var(--black);
     }
 
     @media (max-width: 640px) {
@@ -729,8 +747,8 @@
       <nav class="nav" role="navigation" aria-label="Main navigation">
         <a href="#top" class="logo" aria-label="Next Beginning Houses Home">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M3 12L12 3l9 9v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-8Z" stroke="var(--primary-green)" stroke-width="2"/>
-            <path d="M9 21v-6h6v6" stroke="var(--primary-green)" stroke-width="2"/>
+            <path d="M3 12L12 3l9 9v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-8Z" stroke="var(--white)" stroke-width="2"/>
+            <path d="M9 21v-6h6v6" stroke="var(--white)" stroke-width="2"/>
           </svg>
           <span>Next Beginning Houses</span>
         </a>
@@ -738,7 +756,7 @@
         <div class="nav-actions">
           <a href="tel:+15206538354" class="phone-badge" aria-label="Call us at 520-653-8354">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M22 16.92V19.92C22 21.4731 20.7731 22.7 19.22 22.7C8.64969 22.7 0 14.0503 0 3.48C0 1.92687 1.22687 0.7 2.78 0.7H5.78C6.32677 0.7 6.78 1.15323 6.78 1.7V4.96C6.78 5.50677 6.32677 5.96 5.78 5.96H3.78C3.78 12.5869 9.1131 17.92 15.74 17.92V15.92C15.74 15.3732 16.1932 14.92 16.74 14.92H20C20.5468 14.92 21 15.3732 21 15.92V16.92H22Z" fill="var(--primary-green)"/>
+              <path d="M22 16.92V19.92C22 21.4731 20.7731 22.7 19.22 22.7C8.64969 22.7 0 14.0503 0 3.48C0 1.92687 1.22687 0.7 2.78 0.7H5.78C6.32677 0.7 6.78 1.15323 6.78 1.7V4.96C6.78 5.50677 6.32677 5.96 5.78 5.96H3.78C3.78 12.5869 9.1131 17.92 15.74 17.92V15.92C15.74 15.3732 16.1932 14.92 16.74 14.92H20C20.5468 14.92 21 15.3732 21 15.92V16.92H22Z" fill="var(--gold)"/>
             </svg>
             (520) 653-8354
           </a>
@@ -752,6 +770,17 @@
     <!-- Hero Section -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="container">
+        <div class="hero-decor">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Lightning -->
+            <path d="M30 20 L40 10 L35 30 L45 25 L40 40 L50 35 L45 50 L55 45" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+            <!-- Money raining (simplified dollar signs) -->
+            <text x="20" y="60" font-size="8" fill="#FFFFFF">$</text>
+            <text x="40" y="70" font-size="8" fill="#FFFFFF">$</text>
+            <text x="60" y="50" font-size="8" fill="#FFFFFF">$</text>
+            <text x="80" y="65" font-size="8" fill="#FFFFFF">$</text>
+          </svg>
+        </div>
         <div class="hero-content fade-in-up">
           <h1 id="hero-heading">Sell Your House Fast in Tucson</h1>
           <p class="lead">Get a fair cash offer with no repairs, no fees, and no showings. Close on your timeline with Next Beginning Houses.</p>
@@ -772,25 +801,25 @@
         <div class="trust-badges">
           <div class="badge">
             <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M20 6L9 17L4 12" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 6L9 17L4 12" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>Local & Trusted</span>
           </div>
           <div class="badge">
             <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M20 6L9 17L4 12" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 6L9 17L4 12" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>Close on Your Timeline</span>
           </div>
           <div class="badge">
             <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M20 6L9 17L4 12" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 6L9 17L4 12" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>Transparent Process</span>
           </div>
           <div class="badge">
             <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M20 6L9 17L4 12" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 6L9 17L4 12" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>No Pressure</span>
           </div>
@@ -848,25 +877,25 @@
             <ul class="benefits-list">
               <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M20 6L9 17L4 12" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 6L9 17L4 12" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <strong>Sell As-Is</strong> — No repairs or upgrades needed
               </li>
               <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M20 6L9 17L4 12" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 6L9 17L4 12" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <strong>No Fees or Commissions</strong> — Keep all your proceeds
               </li>
               <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M20 6L9 17L4 12" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 6L9 17L4 12" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <strong>Private Sale</strong> — No public showings or open houses
               </li>
               <li>
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M20 6L9 17L4 12" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 6L9 17L4 12" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <strong>Flexible Timeline</strong> — Close in days or weeks
               </li>
@@ -932,7 +961,7 @@
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq1">
               Do I need to make any repairs before selling?
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M6 9L12 15L18 9" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 9L12 15L18 9" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq-answer" id="faq1">
@@ -944,7 +973,7 @@
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq2">
               Are there any fees or commissions?
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M6 9L12 15L18 9" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 9L12 15L18 9" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq-answer" id="faq2">
@@ -956,7 +985,7 @@
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq3">
               How quickly can we close?
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M6 9L12 15L18 9" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 9L12 15L18 9" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq-answer" id="faq3">
@@ -968,7 +997,7 @@
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq4">
               What if you can’t buy my house?
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M6 9L12 15L18 9" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 9L12 15L18 9" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq-answer" id="faq4">
@@ -980,7 +1009,7 @@
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq5">
               Am I obligated if I request an offer?
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M6 9L12 15L18 9" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 9L12 15L18 9" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <div class="faq-answer" id="faq5">
@@ -1043,9 +1072,9 @@
   <div class="transparency-section">
     <button class="transparency-btn" id="transparency-toggle" aria-label="View AI transparency information">
       <svg class="transparency-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--accent-gold)" stroke-width="2"/>
-        <path d="M12 16V12" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round"/>
-        <path d="M12 8H12.01" stroke="var(--accent-gold)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--gold)" stroke-width="2"/>
+        <path d="M12 16V12" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M12 8H12.01" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
       </svg>
       AI Info
     </button>
