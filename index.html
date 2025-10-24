@@ -45,20 +45,20 @@
 
   <style>
     :root {
-      /* Colors (black and gold theme) */
+      /* Colors (black and gold theme with brighter wording) */
       --black: #000000; /* Background */
       --gold: #FFD700; /* Accent and highlights */
-      --white: #FFFFFF; /* Lightning and money */
-      --gray: #333333; /* Muted text */
+      --white: #FFFFFF; /* Lightning, money, and now text */
+      --gray: #333333; /* Unused for text, kept for consistency */
       --shadow-color: rgba(0, 0, 0, 0.3);
 
       /* Design tokens */
       --bg-primary: var(--black);
       --bg-secondary: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
       --bg-tertiary: #1a1a1a;
-      --text-primary: var(--white);
-      --text-secondary: var(--gray);
-      --text-muted: #666666;
+      --text-primary: var(--white); /* Changed from black to white for visibility */
+      --text-secondary: var(--white); /* Changed from gray to white */
+      --text-muted: var(--white); /* Changed from gray to white */
       --border: rgba(255, 215, 0, 0.1);
       --border-hover: rgba(255, 215, 0, 0.2);
       --accent: var(--gold);
@@ -71,7 +71,7 @@
       --container-max: 1200px;
       --container-padding: clamp(1rem, 4vw, 2rem);
       --section-padding: clamp(3rem, 8vw, 6rem);
-      --border-radius: 8px; /* Slightly sharper for bold look */
+      --border-radius: 8px;
       --border-radius-lg: 12px;
       --shadow-sm: 0 2px 8px var(--shadow-color);
       --shadow-md: 0 4px 16px var(--shadow-color);
@@ -149,11 +149,11 @@
     }
 
     p {
-      color: var(--text-secondary);
+      color: var(--text-secondary); /* Now white for visibility */
     }
 
     .text-muted {
-      color: var(--text-muted);
+      color: var(--text-muted); /* Now white for visibility */
     }
 
     .lead {
@@ -390,7 +390,7 @@
     }
 
     .hero-meta {
-      color: var(--text-muted);
+      color: var(--text-muted); /* Now white for visibility */
       font-size: var(--font-size-sm);
     }
 
@@ -414,7 +414,7 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      color: var(--text-muted);
+      color: var(--text-muted); /* Now white for visibility */
       font-size: var(--font-size-sm);
       font-weight: 500;
     }
@@ -442,6 +442,7 @@
     .section-header p {
       max-width: 600px;
       margin: 0 auto;
+      color: var(--text-secondary); /* Now white for visibility */
     }
 
     /* Process steps */
@@ -502,7 +503,7 @@
     }
 
     .callout p {
-      color: var(--text-secondary);
+      color: var(--text-secondary); /* Now white for visibility */
       margin: 0;
     }
 
@@ -526,7 +527,7 @@
       border: none;
       padding: 1.25rem 1.5rem;
       text-align: left;
-      color: var(--text-primary);
+      color: var(--text-primary); /* Now white for visibility */
       font-size: var(--font-size-base);
       font-weight: 600;
       cursor: pointer;
@@ -542,7 +543,7 @@
 
     .faq-answer {
       padding: 0 1.5rem 1.25rem;
-      color: var(--text-secondary);
+      color: var(--text-secondary); /* Now white for visibility */
       display: none;
     }
 
@@ -588,17 +589,19 @@
 
     .footer-info h4 {
       margin-bottom: 1rem;
-      color: var(--text-primary);
+      color: var(--text-primary); /* Now white for visibility */
     }
 
     .footer-info p {
       margin-bottom: 0.5rem;
       font-size: var(--font-size-sm);
+      color: var(--text-secondary); /* Now white for visibility */
     }
 
     .footer-contact p {
       margin-bottom: 0.5rem;
       font-size: var(--font-size-sm);
+      color: var(--text-secondary); /* Now white for visibility */
     }
 
     /* Responsive adjustments */
